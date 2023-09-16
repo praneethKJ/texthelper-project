@@ -45,7 +45,7 @@ function App() {
         <Route index element={
           <TextForm mode={mode} showAlert={showAlert} />}/>
       <Route path="/TextForm" element={<TextForm/>}/>
-      <Route path="/About" element={<About/>
+      <Route path="/About" element={<About mode={mode}/>
     }/>
         
       </Routes>
