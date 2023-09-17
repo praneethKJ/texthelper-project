@@ -5,6 +5,7 @@ export default function TextForm(props) {
   
   const [text, setText] = useState('')
   const handleUpClick = () => {
+
     let newText = text.toUpperCase();
     setText(newText);
     props.showAlert("Converted to UpperCase", "success");
@@ -17,6 +18,7 @@ export default function TextForm(props) {
   const handleClear = () => {
     let newText = '';
     setText(newText)
+    props.showAlert("Converted to UpperCase", "success");
   }
   // function to remove extra spaces
   const handleExtraSpaces = () => {

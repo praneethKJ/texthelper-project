@@ -11,3 +11,40 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.container {
+text-align: center;
+font-family: 'Montserrat', sans-serif;
+}
+.container #user{
+  padding: 3px 10px;
+  margin: 4px 10px;
+}
+.container #email{
+  padding: 3px 10px;
+  margin: 4px 10px;
+}
+div .buttons{
+  margin: 0rem 1rem 0rem 5rem;
+}
+div .buttons .reset{
+  background-color: crimson;
+  border: 1px solid balck;
+  padding: 4px 10px;
+  border-radius: 14px;
+  color: aliceblue;
+}
+div .buttons .submit{
+  margin-right: 1rem;
+  background-color: crimson;
+  border: 1px solid balck;
+  padding: 4px 10px;
+  border-radius: 14px;
+  color: aliceblue;
+}
+div .buttons .reset:hover{
+  background-color: lightcoral;
+}
+div .buttons .submit:hover{
+  background-color: lightcoral;
+
+}

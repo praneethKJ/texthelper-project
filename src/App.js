@@ -5,6 +5,7 @@ import TextForm from './components/TextForm';
 import About from './components/About';
 import React, { useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import EmailValidator from './components/EmailValidator';
 
 
 function App() {
@@ -26,9 +27,6 @@ function App() {
       setMode('dark');
       document.body.style.backgroundColor = 'gray';
       showAlert("Dark mode Enabled", "success");
-      // setTimeout(() => {
-
-      // }, 1500);
     }
     else {
       setMode('light');
@@ -39,15 +37,15 @@ function App() {
   return (
     <>
     <BrowserRouter>
-      <Navbar title="TextHelper" mode={mode} toggleMode={toggleMode} />
+      <Navbar title="TextHelper" alert={alert} mode={mode} toggleMode={toggleMode}/>
       <Alerts alert={alert}/>
       <Routes>
         <Route index element={
           <TextForm mode={mode} showAlert={showAlert} />}/>
-      <Route path="/TextForm" element={<TextForm/>}/>
+      <Route path="/TextForm" element={ <TextForm mode={mode}/>}/>
       <Route path="/About" element={<About mode={mode}/>
     }/>
-        
+      <Route path="/EmailValidator" element={<EmailValidator mode={mode}/>}/>
       </Routes>
     </BrowserRouter>
     </>

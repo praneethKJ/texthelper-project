@@ -15,6 +15,9 @@ export default function Navbar(props) {
                             <li className="nav-item">
                                 <Link className="nav-link" to="/About">About</Link>
                             </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/EmailValidator">EmailValidator</Link>
+                            </li>
                         </ul>
                     </div>
                     <div className="form-check form-switch">
